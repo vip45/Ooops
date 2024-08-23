@@ -32,8 +32,8 @@ public:
             if (amount <= accBal)
             {
                 accBal -= amount;
-                cout << "Withdrawal Successfull ." << endl
-                     << "Remaining Balance is : $ " << accBal << endl;
+                cout<< "Withdrawal Successfull ." << endl
+                    << "Remaining Balance is : $ " << accBal << endl;
             }
             else
             {
@@ -78,7 +78,7 @@ public:
     void setPin(int pin)
     {
         this->pin = pin;
-        cout<<"New Pin Generated."<<endl;
+        cout << "New Pin Generated." << endl;
     }
 };
 
@@ -94,12 +94,12 @@ int main()
     cout << "My balance is : " << myATM.getBal() << endl;
 
     myATM.checkBal(1234);
-    myATM.withdraw(5000,1233);
-    myATM.withdraw(5000,1234);
+    myATM.withdraw(5000, 1233);
+    myATM.withdraw(5000, 1234);
     myATM.setPin(2222);
 
     myATM.checkBal(1234);
     myATM.checkBal(2222);
-    myATM.withdraw(5000,2222);
-    myATM.withdraw(5000,2222);
+    myATM.withdraw(5000, 2222);
+    myATM.withdraw(5000, 2222);
 }
